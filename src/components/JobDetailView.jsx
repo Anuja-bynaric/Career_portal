@@ -18,7 +18,7 @@ const JobDetailView = ({ job, onBack }) => {
         {/* LEFT: JOB INFO */}
         <div className="lg:col-span-2 space-y-8">
           <div>
-            <h1 className="text-4xl font-black text-slate-900 mb-4">{job.title}</h1>
+            <h3 className="text-2xl font-semibold text-slate-900 mb-4">{job.title}</h3>
             <div className="flex flex-wrap gap-4 text-gray-600 font-medium">
               <span className="flex items-center gap-1"><MapPin size={18} /> {job.location}</span>
               <span className="flex items-center gap-1"><Briefcase size={18} /> {job.exp}</span>
@@ -65,7 +65,7 @@ const JobDetailView = ({ job, onBack }) => {
               </div>
               <button 
                 type="submit" 
-                className="w-full bg-red-600 text-white font-bold py-4 rounded-xl shadow-lg hover:bg-red-700 transition active:scale-95 flex items-center justify-center gap-2"
+                className="w-1/2 bg-red-600 text-white font-semibold py-3 rounded-xl shadow-lg hover:bg-red-700 transition active:scale-95 flex items-center justify-center gap-2"
               >
                 SUBMIT APPLICATION <Send size={18} />
               </button>
